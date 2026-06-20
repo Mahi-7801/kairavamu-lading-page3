@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Droplets, Zap, Leaf, TrendingUp, Scissors, Sun, Wand2, Layers, Sparkles, ArrowRight, ChevronRight } from 'lucide-react';
+import { Droplets, Zap, Leaf, TrendingUp, Scissors, Sun, Wand2, Layers, Sparkles, ArrowRight, ChevronRight, PenTool, Palette, HeartPulse, Link2 } from 'lucide-react';
 
 const treatments = [
   {
@@ -88,7 +88,7 @@ const treatments = [
   },
   {
     id: 'pmu-eyebrows',
-    icon: TrendingUp,
+    icon: PenTool,
     image: '/pmu-eyebrows1.jpg',
     title: 'PMU Eyebrows',
     subtitle: 'Permanent Eyebrow Enhancement',
@@ -116,7 +116,7 @@ const treatments = [
   },
   {
     id: 'scalp-pig',
-    icon: Layers,
+    icon: Palette,
     image: '/SMP-Scalp-Micro-Pigmentation.webp',
     title: 'Scalp Micropigmentation',
     subtitle: 'Instant Fuller Hair Look',
@@ -130,7 +130,7 @@ const treatments = [
   },
   {
     id: 'hairfall',
-    icon: Leaf,
+    icon: HeartPulse,
     image: '/hair-gfc2.jpg',
     title: 'Hair Fall Treatment Programs',
     subtitle: 'Targeted Hair Fall Solutions',
@@ -139,13 +139,13 @@ const treatments = [
     price: null,
     priceLabel: 'Consult for Pricing',
     offer: null,
-    accent: 'from-rose-400 to-rose-600',
-    bg: 'bg-rose-50',
+    accent: 'from-red-400 to-red-600',
+    bg: 'bg-red-50',
   },
   {
     id: 'regrowth',
     icon: TrendingUp,
-    image: '/hair-gfc.jpg',
+    image: '/hair_gfc_after.png',
     title: 'Hair Regrowth Programs',
     subtitle: 'Comprehensive Regrowth Solutions',
     desc: 'Comprehensive treatment programs designed to restore hair volume, density and your confidence.',
@@ -153,13 +153,13 @@ const treatments = [
     price: null,
     priceLabel: 'Consult for Pricing',
     offer: null,
-    accent: 'from-blue-400 to-blue-600',
-    bg: 'bg-blue-50',
+    accent: 'from-cyan-400 to-cyan-600',
+    bg: 'bg-cyan-50',
   },
   {
     id: 'extensions',
-    icon: Scissors,
-    image: '/hair-gfc2.jpg',
+    icon: Link2,
+    image: '/Overall Hair Quality after.jpg',
     title: 'Hair Extensions',
     subtitle: 'Premium Hair Extension Solutions',
     desc: 'Instantly enhance hair length, volume and appearance with premium hair extension solutions.',
@@ -167,8 +167,8 @@ const treatments = [
     price: null,
     priceLabel: 'Consult for Pricing',
     offer: null,
-    accent: 'from-purple-400 to-purple-600',
-    bg: 'bg-purple-50',
+    accent: 'from-violet-400 to-violet-600',
+    bg: 'bg-violet-50',
   },
 ];
 

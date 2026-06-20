@@ -11,12 +11,12 @@ const quickLinks = [
 ];
 
 const treatments = [
-  'PRP Hair Treatment',
-  'GFC Hair Treatment',
-  'Hair Fall Programs',
-  'Hair Regrowth Programs',
-  'Hair Extensions',
-  'Scalp Treatments',
+  { label: 'PRP Hair Treatment', href: '#prp' },
+  { label: 'GFC Hair Treatment', href: '#gfc' },
+  { label: 'Hair Fall Programs', href: '#hairfall' },
+  { label: 'Hair Regrowth Programs', href: '#regrowth' },
+  { label: 'Hair Extensions', href: '#extensions' },
+  { label: 'Scalp Treatments', href: '#treatments' },
 ];
 
 export default function Footer() {
@@ -64,8 +64,8 @@ export default function Footer() {
             <h4 className="text-white font-semibold text-sm mb-4">Treatments</h4>
             <ul className="space-y-2">
               {treatments.map((t) => (
-                <li key={t}>
-                  <span className="text-emerald-200/50 text-sm">{t}</span>
+                <li key={t.href}>
+                  <a href={t.href} className="text-emerald-200/50 hover:text-gold-400 text-sm transition-colors">{t.label}</a>
                 </li>
               ))}
             </ul>

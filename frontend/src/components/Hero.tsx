@@ -92,21 +92,6 @@ export default function Hero() {
               PRP, GFC, Hair Fall Treatments, Hair Regrowth Programs & Hair Extensions Regain thicker, healthier and stronger hair.
             </p>
 
-            <div className="flex items-center gap-4 mb-8 p-4 glass-card-dark rounded-2xl">
-              <div className="w-14 h-14 rounded-full overflow-hidden flex-shrink-0 shadow-gold ring-2 ring-gold-500/20">
-                <img
-                  src="/cosmetologist-yamini.jpg"
-                  alt="Dr. Yamini"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div>
-                <p className="text-white font-semibold text-base">Dr. Yamini Kiran Pasupuleti</p>
-                <p className="text-gold-400 text-sm">PG Diploma in Cosmetology & Aesthetics</p>
-                <p className="text-emerald-300/60 text-xs mt-0.5">10+ Years Experience</p>
-              </div>
-            </div>
-
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <a
                 href="#contact"
