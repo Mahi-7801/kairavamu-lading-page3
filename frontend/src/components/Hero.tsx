@@ -89,7 +89,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-emerald-200/80 text-lg sm:text-xl mb-6 max-w-lg leading-relaxed">
-              PRP, GFC, Hair Fall Treatments, Hair Regrowth Programs & Hair Extensions — Regain thicker, healthier and stronger hair.
+              PRP, GFC, Hair Fall Treatments, Hair Regrowth Programs & Hair Extensions Regain thicker, healthier and stronger hair.
             </p>
 
             <div className="flex items-center gap-4 mb-8 p-4 glass-card-dark rounded-2xl">

@@ -104,7 +104,7 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="text-gold-400/80 hover:text-gold-300 text-sm font-semibold tracking-wide transition-all duration-300 hover:scale-105"
             >
-              ⚡ Powered by <span className="text-white font-bold">Digital Verto</span>
+              Powered by <span className="text-white font-bold">Digital Verto</span> <img src="/dv-logo.png" alt="Digital Verto" className="object-contain inline-block" style={{ width: '30px', height: '30px', animation: 'waveHand 1.5s ease-in-out infinite' }} />
             </a>
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
