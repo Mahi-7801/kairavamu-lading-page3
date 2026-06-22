@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Droplets, Zap, Leaf, TrendingUp, Scissors, Sun, Wand2, Layers, Sparkles, ArrowRight, ChevronRight, PenTool, Palette, HeartPulse, Link2 } from 'lucide-react';
+import { Droplets, Zap, TrendingUp, Layers, Sparkles, ChevronRight, HeartPulse, Link2 } from 'lucide-react';
 
 const treatments = [
   {
@@ -43,90 +43,6 @@ const treatments = [
     offer: null,
     accent: 'from-blue-400 to-blue-600',
     bg: 'bg-blue-50',
-  },
-  {
-    id: 'carbon',
-    icon: Sun,
-    image: '/carbon-peel.jpg',
-    title: 'Carbon Laser',
-    subtitle: 'Skin Rejuvenation Treatment',
-    desc: 'Deep cleansing and skin brightening treatment for instant glow and improved texture.',
-    benefits: ['Deep Cleansing & Oil Control', 'Instant Glow & Skin Brightening', 'Minimizes Pores', 'Improves Skin Texture'],
-    price: '\u20B93,000 \u2013 \u20B97,000',
-    priceLabel: 'Per Session',
-    offer: 'Up To 40% OFF',
-    accent: 'from-orange-400 to-orange-600',
-    bg: 'bg-orange-50',
-  },
-  {
-    id: 'laser-toning',
-    icon: Wand2,
-    image: '/laser-toning.jpg',
-    title: 'Laser Toning',
-    subtitle: 'Pigmentation & Skin Tone Treatment',
-    desc: 'Reduces pigmentation, evens skin tone and improves acne marks for brighter skin.',
-    benefits: ['Reduces Pigmentation', 'Improves Uneven Skin Tone', 'Improves Acne Marks', 'Brightens & Adds Natural Glow'],
-    price: '\u20B93,000 \u2013 \u20B97,000',
-    priceLabel: 'Per Session',
-    offer: 'Up To 40% OFF',
-    accent: 'from-rose-400 to-rose-600',
-    bg: 'bg-rose-50',
-  },
-  {
-    id: 'laser-hair',
-    icon: Scissors,
-    image: '/laser-uhr1.jpg',
-    title: 'Laser Hair Reduction',
-    subtitle: 'Long-Term Hair Reduction',
-    desc: 'Advanced laser technology for long-term hair reduction across all treatment areas.',
-    benefits: ['Long-Term Hair Reduction', 'No Ingrown Hair or Skin Darkening', 'Saves Time & Effort', 'Safe for All Skin Types'],
-    price: '\u20B91,000 \u2013 \u20B930,000',
-    priceLabel: 'Per Session (Varies by Area)',
-    offer: 'Up To 40% OFF',
-    accent: 'from-purple-400 to-purple-600',
-    bg: 'bg-purple-50',
-  },
-  {
-    id: 'pmu-eyebrows',
-    icon: PenTool,
-    image: '/pmu-eyebrows1.jpg',
-    title: 'PMU Eyebrows',
-    subtitle: 'Permanent Eyebrow Enhancement',
-    desc: 'Perfect shape and symmetry with long-lasting, smudge-proof eyebrow enhancement.',
-    benefits: ['Saves Time Everyday', 'Perfect Shape & Symmetry', 'Long-Lasting & Smudgeproof', 'Natural Looking Results'],
-    price: '\u20B920,000 \u2013 \u20B940,000',
-    priceLabel: 'Microblading / Ombre / Combination',
-    offer: 'Up To 25% OFF',
-    accent: 'from-teal-400 to-teal-600',
-    bg: 'bg-teal-50',
-  },
-  {
-    id: 'pmu-lips',
-    icon: Leaf,
-    image: '/PMU%20Lipblush%20122.jpg',
-    title: 'PMU Lipblush',
-    subtitle: 'Permanent Lip Colour Enhancement',
-    desc: 'Defines lip borders and enhances natural lip colour for a beautiful, long-lasting look.',
-    benefits: ['Defines Lip Borders', 'Enhances Natural Lip Colour', 'Long-Lasting & Low Maintenance', 'Pigmentation Correction'],
-    price: '\u20B920,000 \u2013 \u20B940,000',
-    priceLabel: 'Based on Technique & Correction',
-    offer: 'Up To 25% OFF',
-    accent: 'from-pink-400 to-pink-600',
-    bg: 'bg-pink-50',
-  },
-  {
-    id: 'scalp-pig',
-    icon: Palette,
-    image: '/SMP-Scalp-Micro-Pigmentation.webp',
-    title: 'Scalp Micropigmentation',
-    subtitle: 'Instant Fuller Hair Look',
-    desc: 'Quick, non-surgical solution for an instant fuller hair appearance with low maintenance.',
-    benefits: ['Instant Fuller Hair Look', 'Quick Results, Non-Surgical', 'Low Maintenance & Long-Lasting', 'Customizable to Hairline'],
-    price: '\u20B920,000 \u2013 \u20B91,00,000',
-    priceLabel: 'Based on Area & Customization',
-    offer: 'Up To 25% OFF',
-    accent: 'from-indigo-400 to-indigo-600',
-    bg: 'bg-indigo-50',
   },
   {
     id: 'hairfall',
@@ -214,10 +130,11 @@ export default function Treatments() {
         <div className={`text-center mb-14 md:mb-16 transition-all duration-1000 ease-out ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}>
           <span className="inline-block px-4 py-1.5 bg-gold-500/10 text-gold-600 text-xs font-semibold tracking-widest uppercase rounded-full mb-4">Our Treatments</span>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-emerald-800 leading-tight mb-4">
-            Advanced <span className="text-gradient-gold">Hair & Aesthetic</span> Treatments
+            Advanced <span className="text-gradient-gold">Hair Growth</span><br className="hidden md:block" />
+            &amp; Hair Restoration Solutions
           </h2>
           <p className="text-clinic-gray max-w-2xl mx-auto mt-2 text-base md:text-lg leading-relaxed">
-            Choose from our range of scientifically advanced treatments for hair, skin and aesthetics.
+            PRP, GFC, Hair Fall Treatments, Hair Regrowth Programs &amp; Hair Extensions — Regain thicker, healthier and stronger hair.
           </p>
           <div className="gold-divider mt-6" />
         </div>

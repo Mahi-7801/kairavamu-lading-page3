@@ -36,10 +36,10 @@ function Particles() {
 }
 
 const trustBadges = [
-  { icon: Shield, text: 'FDA Approved Technology' },
-  { icon: Users, text: 'Personalized Treatment Plans' },
-  { icon: Clock, text: 'Minimal Downtime' },
-  { icon: Award, text: 'Experienced Specialists' },
+  { icon: Shield, text: 'FDA Approved Hair Treatments' },
+  { icon: Users, text: 'Personalized Hair Care Plans' },
+  { icon: Clock, text: 'Minimal Downtime & Recovery' },
+  { icon: Award, text: 'Expert Hair Restoration Specialists' },
 ];
 
 export default function Hero() {
@@ -76,7 +76,7 @@ export default function Hero() {
           <div className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-gold-500/10 border border-gold-500/20 rounded-full mb-6 backdrop-blur-sm">
               <span className="w-2 h-2 bg-gold-500 rounded-full animate-pulse" />
-              <span className="text-gold-400 text-sm font-medium">Exclusive Offers On Selected Treatments</span>
+              <span className="text-gold-400 text-sm font-medium">Up To 40% OFF on PRP &amp; GFC Hair Treatments</span>
             </div>
 
             <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] mb-6">
@@ -132,11 +132,11 @@ export default function Hero() {
             <div className="relative w-full aspect-square max-w-lg mx-auto">
               <div className="absolute inset-0 bg-gradient-to-br from-gold-500/20 to-emerald-600/20 rounded-[2rem] rotate-6 backdrop-blur-sm" />
               <div className="absolute inset-0 glass-card-dark rounded-[2rem] overflow-hidden">
-                {['/girl-ai-composite.png', '/hair-gfc.jpg', '/hair-transplant.jpg'].map((img, i) => (
+                {['/hair-gfc.jpg', '/hair-transplant.jpg', '/hair_gfc_after.png'].map((img, i) => (
                   <img
                     key={img}
                     src={img}
-                    alt=""
+                    alt="Hair restoration treatment"
                     className="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000"
                     style={{
                       opacity: activeImage === i ? 1 : 0,
