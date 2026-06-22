@@ -1,4 +1,5 @@
 import { MapPin, Phone, MessageCircle, ArrowUp, Heart } from 'lucide-react';
+import { getWhatsAppUrl } from '../data/services';
 
 const quickLinks = [
   { label: 'Home', href: '#home' },
@@ -41,7 +42,7 @@ export default function Footer() {
               <a href="tel:7998777666" className="w-9 h-9 rounded-full bg-white/5 hover:bg-gold-500/20 flex items-center justify-center transition-colors">
                 <Phone className="w-4 h-4 text-gold-400" />
               </a>
-              <a href="https://wa.me/918478060606" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/5 hover:bg-green-500/20 flex items-center justify-center transition-colors">
+              <a href={getWhatsAppUrl()} target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full bg-white/5 hover:bg-green-500/20 flex items-center justify-center transition-colors">
                 <MessageCircle className="w-4 h-4 text-gold-400" />
               </a>
             </div>
@@ -86,7 +87,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <MessageCircle className="w-4 h-4 text-gold-500 flex-shrink-0" />
-                <a href="https://wa.me/918478060606" target="_blank" rel="noopener noreferrer" className="text-emerald-200/50 text-sm hover:text-gold-400 transition-colors">8478060606</a>
+                <a href={getWhatsAppUrl()} target="_blank" rel="noopener noreferrer" className="text-emerald-200/50 text-sm hover:text-gold-400 transition-colors">8478060606</a>
               </div>
             </div>
           </div>

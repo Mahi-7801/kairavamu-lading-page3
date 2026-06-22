@@ -281,8 +281,36 @@
     animation: marquee 30s linear infinite;
   }
 
+  .animate-phone-ring {
+    animation: phone-ring 1.5s ease-in-out infinite;
+  }
+
+  .animate-whatsapp-bounce {
+    animation: whatsapp-bounce 2s ease-in-out infinite;
+  }
+
   @keyframes marquee {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
+  }
+
+  @keyframes phone-ring {
+    0%, 100% { transform: rotate(0deg) scale(1); }
+    10% { transform: rotate(-15deg) scale(1.1); }
+    20% { transform: rotate(15deg) scale(1.1); }
+    30% { transform: rotate(-10deg) scale(1.05); }
+    40% { transform: rotate(10deg) scale(1.05); }
+    50% { transform: rotate(-5deg) scale(1); }
+    60%, 100% { transform: rotate(0deg) scale(1); }
+  }
+
+  @keyframes whatsapp-bounce {
+    0%, 100% { transform: translateX(0); }
+    15% { transform: translateX(-4px); }
+    30% { transform: translateX(4px); }
+    45% { transform: translateX(-3px); }
+    60% { transform: translateX(3px); }
+    75% { transform: translateX(-1px); }
+    90% { transform: translateX(1px); }
   }
 }

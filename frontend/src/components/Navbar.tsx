@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Phone, MessageCircle, ChevronDown } from 'lucide-react';
 import { useScrollDirection } from '../hooks/useScrollAnimation';
+import { getWhatsAppUrl } from '../data/services';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -102,7 +103,7 @@ export default function Navbar() {
               <span>7998777666</span>
             </a>
             <a
-              href="https://wa.me/918478060606"
+              href={getWhatsAppUrl()}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 px-4 py-2 bg-green-600 hover:bg-green-700 text-white text-sm font-semibold rounded-full transition-all hover:scale-105 active:scale-95"
@@ -183,7 +184,7 @@ export default function Navbar() {
                   Book Consultation
                 </a>
                 <a
-                  href="https://wa.me/918478060606"
+                  href={getWhatsAppUrl()}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 px-6 py-3 bg-green-600 text-white font-semibold rounded-full transition-all hover:bg-green-700"

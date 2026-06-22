@@ -14,7 +14,7 @@ const InstagramSection = lazy(() => import('./components/InstagramSection'));
 const Contact = lazy(() => import('./components/Contact'));
 const Footer = lazy(() => import('./components/Footer'));
 const StickyElements = lazy(() =>
-  import('./components/StickyElements').then((m) => ({ default: () => <><m.StickyBookCTA /><m.ExitIntentPopup /></> }))
+  import('./components/StickyElements').then((m) => ({ default: () => <><m.FloatingContactBar /><m.StickyBookCTA /><m.ExitIntentPopup /></> }))
 );
 
 function SectionFallback() {

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { MessageCircle, X, Calendar, Sparkles } from 'lucide-react';
+import { getWhatsAppUrl } from '../data/services';
 
 export function StickyWhatsApp() {
   const [visible, setVisible] = useState(false);
@@ -13,10 +14,10 @@ export function StickyWhatsApp() {
 
   return (
     <a
-      href="https://wa.me/918478060606?text=Hi%2C%20I%27d%20like%20to%20book%20a%20consultation%20at%20Kairavam"
+      href={getWhatsAppUrl("Hi, I'd like to book a consultation at Kairavam")}
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 animate-pulse-gold"
+      className="fixed bottom-6 left-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 animate-pulse-gold"
       aria-label="Chat on WhatsApp"
     >
       <MessageCircle className="w-7 h-7 text-white" />
@@ -43,7 +44,7 @@ export function StickyBookCTA() {
     >
       <div className="bg-white/95 backdrop-blur-xl border-t border-gray-100 px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] flex gap-3 shadow-premium">
         <a
-          href="https://wa.me/918478060606"
+          href={getWhatsAppUrl()}
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 flex items-center justify-center gap-2 py-3 bg-green-600 text-white font-semibold rounded-xl text-sm"
@@ -111,7 +112,7 @@ export function ExitIntentPopup() {
               Book Consultation Now
             </a>
             <a
-              href="https://wa.me/918478060606?text=Hi%2C%20I%27m%20interested%20in%20the%20offer%20for%20treatments"
+              href={getWhatsAppUrl("Hi, I'm interested in the offer for treatments")}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-2 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-full transition-all text-sm"
@@ -124,6 +125,42 @@ export function ExitIntentPopup() {
           <p className="text-xs text-clinic-gray mt-3">Limited appointments available</p>
         </div>
       </div>
+    </div>
+  );
+}
+
+export function FloatingContactBar() {
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setVisible(true), 2500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const btnCircle = "w-12 h-12 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95";
+
+  return (
+    <div
+      className={`fixed right-6 bottom-6 z-[9999] hidden lg:flex flex-col gap-3 transition-all duration-700 ease-out ${
+        visible ? 'translate-x-0 opacity-100' : 'translate-x-8 opacity-0'
+      }`}
+    >
+      <a
+        href={getWhatsAppUrl("Hi, I'd like to book a consultation at Kairavam")}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${btnCircle} bg-green-500 hover:bg-green-600`}
+        aria-label="Chat on WhatsApp"
+      >
+        <img src="/icons/whatsapp.svg" alt="WhatsApp" className="w-5 h-5 brightness-0 invert" />
+      </a>
+      <a
+        href="tel:7998777666"
+        className={`${btnCircle} bg-emerald-800 hover:bg-emerald-700`}
+        aria-label="Call 7998777666"
+      >
+        <img src="/icons/phone.svg" alt="Phone" className="w-5 h-5 brightness-0 invert" />
+      </a>
     </div>
   );
 }

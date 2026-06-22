@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ArrowRight, MessageCircle, Calendar, Shield, Users, Clock, Award, ChevronDown, Sparkles } from 'lucide-react';
+import { getWhatsAppUrl } from '../data/services';
 
 function Particles() {
   const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number; size: number; delay: number; duration: number }>>([]);
@@ -102,7 +103,7 @@ export default function Hero() {
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
-                href="https://wa.me/918478060606"
+                href={getWhatsAppUrl()}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 px-8 py-3.5 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 active:scale-95 hover:shadow-lg text-base"

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { MapPin, Clock, Phone, MessageCircle, Calendar, Send, AlertCircle, Loader2 } from 'lucide-react';
 import { useInView } from '../hooks/useScrollAnimation';
+import { getServicesListText, getWhatsAppUrl } from '../data/services';
 
 export default function Contact() {
   const { ref, isInView } = useInView();
@@ -63,7 +64,8 @@ export default function Contact() {
       const data = await res.json();
       setEmailSent(data.emailSent);
 
-      const whatsappMsg = `Hi, I'd like to book a hair consultation.\n\nName: ${form.name}\nPhone: ${form.phone}\nEmail: ${form.email}\nConcern: ${form.concern}\nMessage: ${form.message}`;
+      const servicesList = getServicesListText();
+      const whatsappMsg = `Hi, I'd like to book a consultation.\n\nName: ${form.name}\nPhone: ${form.phone}\nEmail: ${form.email}\nConcern: ${form.concern}\nMessage: ${form.message}\n\n---\n${servicesList}`;
       window.open(`https://wa.me/918478060606?text=${encodeURIComponent(whatsappMsg)}`, '_blank');
       setForm({ name: '', phone: '', email: '', concern: '', message: '' });
       setSubmitted(true);
@@ -143,12 +145,12 @@ export default function Contact() {
                   <Clock className="w-5 h-5 text-gold-500 flex-shrink-0" />
                   <p className="text-white/90 text-sm">10:00 AM – 8:00 PM</p>
                 </div>
-                <a href="tel:7998777666" className="flex items-center gap-3 group">
-                  <Phone className="w-5 h-5 text-gold-500 flex-shrink-0" />
+                <a href="tel:7998777666" className="flex items-center gap-3 px-3 -mx-3 py-2 rounded-r-lg border-l-2 border-transparent group hover:bg-white/5 hover:border-gold-500 transition-all duration-300">
+                  <Phone className="w-5 h-5 text-gold-500 flex-shrink-0 animate-phone-ring" />
                   <p className="text-white/90 text-sm group-hover:text-gold-400 transition-colors">7998777666</p>
                 </a>
-                <a href="https://wa.me/918478060606" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group">
-                  <MessageCircle className="w-5 h-5 text-gold-500 flex-shrink-0" />
+                <a href={getWhatsAppUrl()} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 px-3 -mx-3 py-2 rounded-r-lg border-l-2 border-transparent group hover:bg-white/5 hover:border-gold-500 transition-all duration-300">
+                  <MessageCircle className="w-5 h-5 text-gold-500 flex-shrink-0 animate-whatsapp-bounce" />
                   <p className="text-white/90 text-sm group-hover:text-gold-400 transition-colors">WhatsApp: 8478060606</p>
                 </a>
               </div>
