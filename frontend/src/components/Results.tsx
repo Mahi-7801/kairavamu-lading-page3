@@ -16,7 +16,6 @@ const results: BeforeAfterCard[] = [
   { id: 1, title: 'GFC Hair Treatment', beforeLabel: 'Before', afterLabel: 'After', improvement: 'Visible Hair Regrowth', beforeImg: '/hair_gfc_before.png', afterImg: '/hair_gfc_after.png' },
   { id: 2, title: 'Hair Density Improvement', beforeLabel: 'Before', afterLabel: 'After', improvement: 'Improved Hair Density & Volume', beforeImg: '/Hair Density Improvement before.jpg', afterImg: '/Hair Density Improvement after.jpg' },
   { id: 3, title: 'Overall Hair Quality', beforeLabel: 'Before', afterLabel: 'After', improvement: 'Stronger, Healthier Hair', beforeImg: '/Overall Hair Quality before.jpg', afterImg: '/Overall Hair Quality after.jpg' },
-  { id: 4, title: 'Hair Transplant', beforeLabel: 'Before', afterLabel: 'After', improvement: 'Permanent Hair Restoration', beforeImg: '/hair_transplant_before.png', afterImg: '/hair_transplant_after.png' },
 ];
 
 function BeforeAfterSlider({ card }: { card: BeforeAfterCard }) {

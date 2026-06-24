@@ -23,7 +23,7 @@ function SectionFallback() {
 
 function App() {
   return (
-    <div className="min-h-screen bg-white font-sans antialiased">
+    <div className="min-h-screen bg-clinic-cream font-sans antialiased">
       <ErrorBoundary>
         <Navbar />
         <main>

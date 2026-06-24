@@ -5,7 +5,7 @@ const treatments = [
   {
     id: 'prp',
     icon: Droplets,
-    image: '/hair-gfc.jpg',
+    image: '/prp_treatment.png',
     title: 'PRP Hair Growth Treatment',
     subtitle: 'Platelet Rich Plasma Therapy',
     desc: 'Uses your body\'s natural growth factors to stimulate dormant hair follicles and promote new hair growth.',
@@ -19,7 +19,7 @@ const treatments = [
   {
     id: 'gfc',
     icon: Zap,
-    image: '/hair-gfc1.jpg',
+    image: '/gfc_treatment.png',
     title: 'GFC Hair Treatment',
     subtitle: 'Growth Factor Concentrate Therapy',
     desc: 'An advanced hair restoration treatment using concentrated growth factors to improve hair quality and regrowth.',
@@ -31,23 +31,9 @@ const treatments = [
     bg: 'bg-emerald-50',
   },
   {
-    id: 'transplant',
-    icon: Layers,
-    image: '/hair-transplant.jpg',
-    title: 'Hair Transplant',
-    subtitle: 'Permanent Hair Restoration',
-    desc: 'Permanent and natural hair growth solution that restores hairline and boosts confidence.',
-    benefits: ['Permanent Hair Growth', 'Restores Hairline & Confidence', 'Low Maintenance Solution', 'Natural Results'],
-    price: 'Consult for Pricing',
-    priceLabel: 'Based on Grafts & Technique',
-    offer: null,
-    accent: 'from-blue-400 to-blue-600',
-    bg: 'bg-blue-50',
-  },
-  {
     id: 'hairfall',
     icon: HeartPulse,
-    image: '/hair-gfc2.jpg',
+    image: '/hair_fall_treatment.png',
     title: 'Hair Fall Treatment Programs',
     subtitle: 'Targeted Hair Fall Solutions',
     desc: 'Target the root causes of excessive hair shedding with personalized treatment plans for lasting results.',
@@ -61,7 +47,7 @@ const treatments = [
   {
     id: 'regrowth',
     icon: TrendingUp,
-    image: '/hair_gfc_after.png',
+    image: '/hair_regrowth.png',
     title: 'Hair Regrowth Programs',
     subtitle: 'Comprehensive Regrowth Solutions',
     desc: 'Comprehensive treatment programs designed to restore hair volume, density and your confidence.',
@@ -75,7 +61,7 @@ const treatments = [
   {
     id: 'extensions',
     icon: Link2,
-    image: '/Overall Hair Quality after.jpg',
+    image: '/hair_extensions.png',
     title: 'Hair Extensions',
     subtitle: 'Premium Hair Extension Solutions',
     desc: 'Instantly enhance hair length, volume and appearance with premium hair extension solutions.',
@@ -156,10 +142,10 @@ export default function Treatments() {
                   background: 'rgba(255,255,255,0.75)',
                   backdropFilter: 'blur(20px)',
                   WebkitBackdropFilter: 'blur(20px)',
-                  border: '1px solid rgba(166,130,99,0.12)',
+                  border: '1px solid rgba(225,207,124,0.12)',
                   boxShadow: hoveredId === t.id
-                    ? '0 24px 48px -16px rgba(52,79,57,0.2), 0 2px 8px rgba(52,79,57,0.04)'
-                    : '0 8px 32px -8px rgba(52,79,57,0.06), 0 1px 3px rgba(0,0,0,0.02)',
+                    ? '0 24px 48px -16px rgba(29,70,49,0.2), 0 2px 8px rgba(29,70,49,0.04)'
+                    : '0 8px 32px -8px rgba(29,70,49,0.06), 0 1px 3px rgba(0,0,0,0.02)',
                   transform: hoveredId === t.id ? 'translateY(-4px) scale(1.005)' : 'translateY(0) scale(1)',
                 }}
               >
@@ -193,9 +179,9 @@ export default function Treatments() {
                       key={b}
                       className="inline-flex items-center gap-1 px-2.5 py-1 text-xs rounded-full border transition-all duration-300"
                       style={{
-                        backgroundColor: hoveredId === t.id ? 'rgba(52,79,57,0.06)' : 'rgba(52,79,57,0.04)',
-                        borderColor: hoveredId === t.id ? 'rgba(166,130,99,0.2)' : 'rgba(52,79,57,0.1)',
-                        color: '#242E28',
+                        backgroundColor: hoveredId === t.id ? 'rgba(29,70,49,0.06)' : 'rgba(29,70,49,0.04)',
+                        borderColor: hoveredId === t.id ? 'rgba(225,207,124,0.2)' : 'rgba(29,70,49,0.1)',
+                        color: '#121f18',
                         transitionDelay: hoveredId === t.id ? `${bi * 30}ms` : '0ms',
                       }}
                     >
@@ -205,7 +191,7 @@ export default function Treatments() {
                   ))}
                 </div>
 
-                <div className="flex items-center justify-between pt-4 border-t" style={{ borderColor: 'rgba(166,130,99,0.1)' }}>
+                <div className="flex items-center justify-between pt-4 border-t" style={{ borderColor: 'rgba(225,207,124,0.1)' }}>
                   <div>
                     {t.price && (
                       <div>
@@ -224,9 +210,9 @@ export default function Treatments() {
                       <span
                         className="inline-flex items-center px-3 py-1 md:px-3 md:py-1 text-[0.625rem] md:text-xs font-bold tracking-wide rounded-md transition-all duration-300"
                         style={{
-                          background: 'linear-gradient(135deg, #A68263 0%, #8E6E52 50%, #A68263 100%)',
+                          background: 'linear-gradient(135deg, #e1cf7c 0%, #bda54d 50%, #e1cf7c 100%)',
                           color: 'white',
-                          boxShadow: hoveredId === t.id ? '0 4px 12px rgba(166,130,99,0.3)' : 'none',
+                          boxShadow: hoveredId === t.id ? '0 4px 12px rgba(225,207,124,0.3)' : 'none',
                         }}
                       >
                         {t.offer}
@@ -236,9 +222,9 @@ export default function Treatments() {
                       href="#contact"
                       className="relative inline-flex items-center gap-1.5 px-5 py-2 text-sm font-semibold rounded-full transition-all duration-300 overflow-hidden group/btn"
                       style={{
-                        background: 'linear-gradient(135deg, #A68263 0%, #8E6E52 50%, #A68263 100%)',
+                        background: 'linear-gradient(135deg, #e1cf7c 0%, #bda54d 50%, #e1cf7c 100%)',
                         color: 'white',
-                        boxShadow: hoveredId === t.id ? '0 4px 16px rgba(166,130,99,0.25)' : '0 2px 8px rgba(166,130,99,0.15)',
+                        boxShadow: hoveredId === t.id ? '0 4px 16px rgba(225,207,124,0.25)' : '0 2px 8px rgba(225,207,124,0.15)',
                       }}
                     >
                       <span className="relative z-10 flex items-center gap-1.5">
@@ -266,14 +252,14 @@ export default function Treatments() {
             {[...concerns, ...concerns].map((c, i) => (
               <span
                 key={`${c}-${i}`}
-                className="inline-flex px-5 py-2.5 rounded-full text-sm font-medium whitespace-nowrap cursor-default transition-all duration-300 hover:!bg-[#344F39] hover:!text-white hover:!border-transparent hover:-translate-y-0.5"
+                className="inline-flex px-5 py-2.5 rounded-full text-sm font-medium whitespace-nowrap cursor-default transition-all duration-300 hover:!bg-[#1d4631] hover:!text-white hover:!border-transparent hover:-translate-y-0.5"
                 style={{
                   background: 'rgba(255,255,255,0.7)',
                   backdropFilter: 'blur(20px)',
                   WebkitBackdropFilter: 'blur(20px)',
-                  border: '1px solid rgba(166,130,99,0.12)',
-                  color: '#242E28',
-                  boxShadow: '0 4px 12px -4px rgba(52,79,57,0.04)',
+                  border: '1px solid rgba(225,207,124,0.12)',
+                  color: '#121f18',
+                  boxShadow: '0 4px 12px -4px rgba(29,70,49,0.04)',
                 }}
               >
                 {c}
