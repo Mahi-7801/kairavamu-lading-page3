@@ -4,7 +4,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 
 const TrustSection = lazy(() => import('./components/TrustSection'));
-const AboutDoctor = lazy(() => import('./components/AboutDoctor'));
+const About = lazy(() => import('./components/About'));
 const Treatments = lazy(() => import('./components/Treatments'));
 const Results = lazy(() => import('./components/Results'));
 const ProcessTimeline = lazy(() => import('./components/ProcessTimeline'));
@@ -29,7 +29,7 @@ function App() {
         <main>
           <Hero />
           <ErrorBoundary><Suspense fallback={<SectionFallback />}><TrustSection /></Suspense></ErrorBoundary>
-          <ErrorBoundary><Suspense fallback={<SectionFallback />}><AboutDoctor /></Suspense></ErrorBoundary>
+          <ErrorBoundary><Suspense fallback={<SectionFallback />}><About /></Suspense></ErrorBoundary>
           <ErrorBoundary><Suspense fallback={<SectionFallback />}><Treatments /></Suspense></ErrorBoundary>
           <ErrorBoundary><Suspense fallback={<SectionFallback />}><Results /></Suspense></ErrorBoundary>
           <ErrorBoundary><Suspense fallback={<SectionFallback />}><ProcessTimeline /></Suspense></ErrorBoundary>

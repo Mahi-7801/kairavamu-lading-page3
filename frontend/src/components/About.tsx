@@ -16,7 +16,7 @@ const stats = [
   { icon: Activity, value: '50+', label: 'Treatments Offered' },
 ];
 
-export default function AboutDoctor() {
+export default function About() {
   const { ref, isInView } = useInView();
 
   return (
@@ -49,7 +49,7 @@ export default function AboutDoctor() {
           <div className={`flex flex-col justify-center transition-all duration-700 delay-200 mt-8 lg:mt-0 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div>
               <p className="text-gold-600 font-medium text-xs tracking-[0.2em] uppercase mb-4 flex items-center gap-2">
-                <span className="text-gold-500">✦</span> ABOUT THE DOCTOR
+                <span className="text-gold-500">✦</span> ABOUT
               </p>
               <h2 className="font-serif text-3xl md:text-4xl lg:text-[40px] font-bold text-emerald-800 mb-3 leading-tight">
                 Yamini Kiran <span className="text-clinic-gray font-normal">Pasupuleti</span>
