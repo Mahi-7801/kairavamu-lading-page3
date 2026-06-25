@@ -1,13 +1,19 @@
-import { Check } from 'lucide-react';
+import { Check, Award, Users, Activity } from 'lucide-react';
 import { useInView } from '../hooks/useScrollAnimation';
 
 const highlights = [
-  '10+ Years Experience',
-  'Certified PMU Specialist',
-  'Personalized Facial Mapping',
+  'Advanced Laser Treatments',
+  'Skin Rejuvenation',
+  'Personalized Beauty Solutions',
   'Natural-Looking Results',
-  'Advanced Aesthetic Techniques',
-  'Premium Pigments & Safety Standards',
+  'Client-Focused Approach',
+  'Premium Safety Standards',
+];
+
+const stats = [
+  { icon: Award, value: '10+', label: 'Years Experience' },
+  { icon: Users, value: '15K+', label: 'Happy Clients' },
+  { icon: Activity, value: '50+', label: 'Treatments Offered' },
 ];
 
 export default function AboutDoctor() {
@@ -33,8 +39,8 @@ export default function AboutDoctor() {
               
               {/* Floating Name Badge */}
               <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-[85%] bg-white/95 backdrop-blur-md py-4 px-6 rounded-2xl shadow-xl border border-gold-200/40 text-center z-10 hover:shadow-2xl transition-all duration-300">
-                <p className="font-serif italic text-2xl text-emerald-800 font-bold leading-none" style={{ fontFamily: 'Georgia, serif' }}>Dr. Yamini</p>
-                <p className="text-[10px] tracking-[0.2em] text-clinic-gray font-semibold uppercase mt-2">PMU Specialist</p>
+                <p className="font-serif italic text-2xl text-emerald-800 font-bold leading-none" style={{ fontFamily: 'Georgia, serif' }}>Yamini</p>
+                <p className="text-[10px] tracking-[0.2em] text-clinic-gray font-semibold uppercase mt-2">Senior Cosmetologist &amp; Aesthetic Expert</p>
               </div>
             </div>
           </div>
@@ -46,14 +52,14 @@ export default function AboutDoctor() {
                 <span className="text-gold-500">✦</span> ABOUT THE DOCTOR
               </p>
               <h2 className="font-serif text-3xl md:text-4xl lg:text-[40px] font-bold text-emerald-800 mb-3 leading-tight">
-                Dr. Yamini Kiran <span className="text-clinic-gray font-normal">Pasupuleti</span>
+                Yamini Kiran <span className="text-clinic-gray font-normal">Pasupuleti</span>
               </h2>
               <p className="text-clinic-gray italic text-sm md:text-base font-medium mb-6">
-                PG Diploma in Cosmetology & Aesthetics &bull; 10+ Years Experience
+                Senior Cosmetologist &amp; Aesthetic Expert &bull; 10+ Years Experience
               </p>
 
               <p className="text-clinic-gray leading-relaxed mb-8 text-sm md:text-base">
-                Dr. Yamini specializes in aesthetic enhancement procedures and personalized beauty solutions that enhance facial harmony while maintaining a natural appearance. Each treatment blends artistic precision with advanced PMU techniques and premium pigments.
+                With over a decade of experience in aesthetic skincare and cosmetic treatments, Yamini specializes in advanced laser treatments, skin rejuvenation, and personalized beauty solutions. Her client-focused approach helps individuals achieve healthy, radiant, and natural-looking results tailored to their unique skin concerns.
               </p>
             </div>
 
@@ -65,6 +71,19 @@ export default function AboutDoctor() {
                     <Check className="w-3.5 h-3.5 text-gold-700" />
                   </div>
                   <span className="text-emerald-900 font-medium text-sm md:text-base">{item}</span>
+                </div>
+              ))}
+            </div>
+
+            {/* Stats Row */}
+            <div className="grid grid-cols-3 gap-4 mt-8">
+              {stats.map((stat) => (
+                <div key={stat.label} className="bg-gold-50/40 border border-gold-100/50 rounded-2xl p-4 text-center transition-all duration-300 hover:shadow-premium hover:bg-gold-50/70">
+                  <div className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-emerald-50 mb-2">
+                    <stat.icon className="w-5 h-5 text-emerald-800" />
+                  </div>
+                  <p className="font-serif text-2xl md:text-3xl font-bold text-emerald-800">{stat.value}</p>
+                  <p className="text-[10px] tracking-[0.15em] text-clinic-gray font-semibold uppercase mt-1">{stat.label}</p>
                 </div>
               ))}
             </div>

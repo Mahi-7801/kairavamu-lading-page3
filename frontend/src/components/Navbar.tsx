@@ -5,7 +5,7 @@ import { getWhatsAppUrl } from '../data/services';
 
 const navLinks = [
   { label: 'Home', href: '#home' },
-  { label: 'About Doctor', href: '#about' },
+  { label: 'About', href: '#about' },
   { label: 'Hair Treatments', href: '#treatments', hasDropdown: true },
   { label: 'Results', href: '#results' },
   { label: 'Reviews', href: '#reviews' },
