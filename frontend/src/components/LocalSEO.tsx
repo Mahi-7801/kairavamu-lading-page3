@@ -17,7 +17,7 @@ export default function LocalSEO() {
               Searching for the best Hair Growth Clinic in Vijayawada? Kairavam Hair Growth & Restoration Clinic offers advanced PRP Hair Treatment, GFC Hair Therapy, Hair Fall Management Programs, Hair Regrowth Solutions and Hair Extensions under expert supervision.
             </p>
             <p>
-              Led by Dr. Yamini Kiran Pasupuleti, our clinic helps men and women achieve healthier, thicker and stronger hair using personalized treatment plans and advanced technology.
+              Led by Yamini Kiran Pasupuleti, our clinic helps men and women achieve healthier, thicker and stronger hair using personalized treatment plans and advanced technology.
             </p>
           </div>
         </div>

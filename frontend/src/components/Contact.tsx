@@ -122,7 +122,7 @@ export default function Contact() {
             Book Your <span className="text-gradient-gold">Hair Consultation</span>
           </h2>
           <p className="text-clinic-gray max-w-2xl mx-auto mt-4">
-            Take the first step towards healthier, thicker hair. Book your consultation with Dr. Yamini today.
+            Take the first step towards healthier, thicker hair. Book your consultation with Yamini today.
           </p>
           <div className="gold-divider mt-6" />
         </div>

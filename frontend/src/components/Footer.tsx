@@ -3,7 +3,7 @@ import { getWhatsAppUrl } from '../data/services';
 
 const quickLinks = [
   { label: 'Home', href: '#home' },
-  { label: 'About Doctor', href: '#about' },
+  { label: 'About', href: '#about' },
   { label: 'Hair Treatments', href: '#treatments' },
   { label: 'Before & After', href: '#results' },
   { label: 'Reviews', href: '#reviews' },

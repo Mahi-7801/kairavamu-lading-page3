@@ -45,7 +45,7 @@ export default function AboutDoctor() {
             </div>
           </div>
 
-          {/* Right Column: Doctor Info & Highlights Grid */}
+          {/* Right Column: Info & Highlights Grid */}
           <div className={`flex flex-col justify-center transition-all duration-700 delay-200 mt-8 lg:mt-0 ${isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
             <div>
               <p className="text-gold-600 font-medium text-xs tracking-[0.2em] uppercase mb-4 flex items-center gap-2">

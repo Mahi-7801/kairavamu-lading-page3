@@ -9,11 +9,11 @@ const faqs = [
   },
   {
     q: 'How Many Sessions Are Needed?',
-    a: 'The number of sessions depends on hair loss severity and individual response. Typically, 4-6 sessions spaced 4-6 weeks apart are recommended for optimal results. Your doctor will create a personalized plan.',
+    a: 'The number of sessions depends on hair loss severity and individual response. Typically, 4-6 sessions spaced 4-6 weeks apart are recommended for optimal results. We will create a personalized plan.',
   },
   {
     q: 'Is GFC Better Than PRP?',
-    a: 'Both treatments are effective. GFC is more concentrated in growth factors, while PRP has a broader therapeutic effect. The ideal option depends on your hair condition and treatment goals. Dr. Yamini will recommend the best approach for you.',
+    a: 'Both treatments are effective. GFC is more concentrated in growth factors, while PRP has a broader therapeutic effect. The ideal option depends on your hair condition and treatment goals. Yamini will recommend the best approach for you.',
   },
   {
     q: 'When Will I See Results?',

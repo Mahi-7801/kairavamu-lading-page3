@@ -3,7 +3,7 @@ import { useInView } from '../hooks/useScrollAnimation';
 
 const steps = [
   { num: 1, icon: Microscope, title: 'Advanced Hair & Scalp Analysis', desc: 'Comprehensive scalp and hair examination using advanced diagnostic tools.' },
-  { num: 2, icon: Stethoscope, title: 'Doctor Consultation', desc: 'One-on-one consultation with Dr. Yamini to discuss your concerns and goals.' },
+  { num: 2, icon: Stethoscope, title: 'Consultation', desc: 'One-on-one consultation with Yamini to discuss your concerns and goals.' },
   { num: 3, icon: ClipboardList, title: 'Personalized Treatment Plan', desc: 'Customized treatment protocol based on your unique hair condition.' },
   { num: 4, icon: Droplets, title: 'PRP / GFC / Hair Restoration Sessions', desc: 'Expertly administered treatment sessions using advanced technology.' },
   { num: 5, icon: BarChart3, title: 'Progress Monitoring', desc: 'Regular follow-ups and progress tracking to ensure optimal results.' },

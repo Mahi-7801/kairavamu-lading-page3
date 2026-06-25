@@ -28,7 +28,7 @@ const reviews = [
     ]
   },
   {
-    author: "Dr.Arshad Shaik",
+    author: "Arshad Shaik",
     avatar: null,
     stars: 5,
     role: "1 review · 3 photos",

@@ -7,7 +7,7 @@ const reasons = [
   { icon: FlaskConical, title: 'Advanced Hair Growth Protocols', desc: 'Evidence-based treatment protocols designed for optimal hair restoration outcomes.' },
   { icon: Clock, title: 'Minimal Downtime Procedures', desc: 'Resume your daily routine quickly with our minimally invasive treatment approaches.' },
   { icon: Sparkles, title: 'Safe & Hygienic Environment', desc: 'State-of-the-art clinic with stringent hygiene and safety standards.' },
-  { icon: Users, title: 'Experienced Hair Restoration Team', desc: 'Led by Dr. Yamini with 10+ years of expertise in hair restoration treatments.' },
+  { icon: Users, title: 'Experienced Hair Restoration Team', desc: 'Led by Yamini with 10+ years of expertise in hair restoration treatments.' },
   { icon: Leaf, title: 'Natural Looking Results', desc: 'Our focus on natural hair growth ensures results that look and feel authentic.' },
   { icon: Stethoscope, title: 'All Solutions Under One Roof', desc: 'Comprehensive skin, hair & PMU solutions delivered in one convenient location.' },
 ];
